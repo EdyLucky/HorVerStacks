@@ -10,7 +10,18 @@ import SwiftUI
 
 struct ContentView : View {
     var body: some View {
-        Text("Hello World")
+        HStack {
+            Image("SwiftUI")
+                .resizable()
+                .frame(width: 50, height: 50, alignment: .center)
+            VStack {
+                Text("Hello SwiftUI")
+                    .font(.headline)
+                    .color(.red)
+                    Text("Better apps. Less code.")
+                }
+            }
+        
     }
 }
 
